@@ -1,39 +1,128 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>
-        faizan sheikh
-    </title>
+<title>Firebase Authentication</title>
+<link rel="stylesheet" href="Email1.css">
 </head>
-<body background="2909662.jpg" size="5" link="#000" alink="#017bf5" vlink="#000">
-    <br/>
-    <h3>
-        <h3 align="center">
-        <font face="lato" size="6">RUSSIAN </font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <font face="lato" size="6">YAMETE KUDASAI</font>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <front face="cinzel">
-            <h1 align="CENTER">
-                <br /><br /><br /><br /><br /><br />
-            <a href="#">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#">VIDEO</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#">PORTFOLIO</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#">BLOG</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#">CONTACT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </front>
-    </h3>
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <h1 align="left">
-        <font face="Lato" color="#000"  size="7">
-            BEAUTIFULL AND VERY CHIP
-        </font>
-    </h1>
-    <br />
-    <h3 align="center">
-    <a href="#">GET STARTED</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="#">LETS HAVE FUN</a>
-     </h3>
 
+<body>
+  
+<div id="login-box">
+  <div class="left">
+    <h1 id='status'>Sign up</h1>
+    <input type="text" id="username" name="username" placeholder="username">
+    <input type="text" id="email" name="email" placeholder="E-mail" />
+    <input type="password" id="password" name="password" placeholder="Password" />
+    
+    <input type="submit" id='signUp' name="signup_submit" value="Sign up" />
+
+  </div>
+  
+  <div class="right">
+    <span class="loginwith">Sign in with<br />social network</span>
+    
+    <button class="social-signin facebook">Log in with facebook</button>
+    <button class="social-signin twitter">Log in with Twitter</button>
+    <button class="social-signin google">Log in with Google+</button>
+  </div>
+  <div class="or">OR</div>
+</div>
 </body>
+
+<script type="module">
+  
+  
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const database= getDatabase(app);
+  const auth = getAuth();
+
+
+sighUp.addEventListener('click',(e) => {
+
+  var email = document.getElementById('email').value;
+  var password = document.getElementById('password').value;
+  var username = document.getElementById('username').value;
+
+  createUserWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+     // Signed in 
+      const user = userCredential.user;
+
+      set(ref(database, 'users/' + user.uid),{
+          username: username,
+          email: email
+      })
+
+      alert('user created!');
+      // ...
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+    
+      alert(errorMessage);
+    // ..
+    });
+
+});
+
+//  login.addEventListener('click',(e)=>{
+//    var email = document.getElementById('email').value;
+//    var password = document.getElementById('password').value;
+
+//       signInWithEmailAndPassword(auth, email, password)
+//       .then((userCredential) => {
+//         // Signed in 
+//         const user = userCredential.user;
+
+//         const dt = new Date();
+//          update(ref(database, 'users/' + user.uid),{
+//           last_login: dt,
+//         })
+
+//          alert('User loged in!');
+//         // ...
+//       })
+//       .catch((error) => {
+//         const errorCode = error.code;
+//         const errorMessage = error.message;
+
+//         alert(errorMessage);
+//   });
+
+//  });
+
+// const user = auth.currentUser;
+// onAuthStateChanged(auth, (user) => {
+//   if (user) {
+//     // User is signed in, see docs for a list of available properties
+//     // https://firebase.google.com/docs/reference/js/firebase.User
+//     const uid = user.uid;
+//     //bla bla bla
+//     // ...
+//   } else {
+//     // User is signed out
+//     // ...
+//     //bla bla bla
+//   }
+// });
+
+// logout.addEventListener('click',(e)=>{
+
+//    signOut(auth).then(() => {
+//      // Sign-out successful.
+//      alert('user loged out');
+//    }).catch((error) => {
+//      // An error happened.
+//      const errorCode = error.code;
+//      const errorMessage = error.message;
+
+//         alert(errorMessage);
+//    });
+
+// });
+
+</script>
+
 </html>
