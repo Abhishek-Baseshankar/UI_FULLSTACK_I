@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Boxes</title>
+    <style>
+        .first{
+            width: 400px;
+            height: 400px;
+            background-color: orange;
+        }
+        .second{
+            width: 400px;
+            height: 400px;
+            background-color: antiquewhite;
+        }
+        .twoboxes{
+            display: flex;
+        }
+        .b1{
+            background-color: blue;
+            width: 400px;
+            height: 400px;
+            
+        }
+        .b2{
+            background-color: purple;
+            width: 400px;
+            height: 400px;
+           
+        }
+        #b22{
+            margin-left: auto;
+        }
+        #box3{
+            justify-content: space-between;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="first"></div>
+    <div class="second"></div>
+    <hr>
+    <div class="twoboxes">
+        <div class="b1"></div>
+        <div class="b2"></div>
+    </div>
+    <hr>
+    <div class="twoboxes">
+        <div class="b1" ></div>
+        <div class="b2" id="b22"></div>
+    </div>
+    <hr>
+    <div class="twoboxes" id="box3">
+        <div class="b1" ></div>
+        <div class="b2"></div>
+        <div class="b1" ></div>
+    </div>
+</body>
+</html>
