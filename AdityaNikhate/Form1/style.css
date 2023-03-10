@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Sono:wght@600&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Genos&family=Lora:ital@1&family=Sono:wght@600&family=Varela+Round&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(61, 226, 61);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 300px;
+}
+.outer_box{
+    width: 350px;
+    background-color: rgb(223, 224, 227);
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+input{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 10px;
+    padding: 4px;
+    font-family: 'Genos', sans-serif;
+    font-family: 'Lora', serif;
+    font-family: 'Sono', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    border: none;
+    background-color: #fff;
+    font-size: medium;
+}
+
+.button{
+    display: flex;
+    justify-content: space-between;
+}
+#reset{
+    width: 140px;
+    display: inline-flex;
+    align-items: center;
+    background-color: rgb(30, 187, 231);
+    border: none;
+    height: 30px;
+    padding-top: 7px;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Lora', serif;
+    font-family: 'Sono', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+
+}
+#submit{
+    width: 140px;
+    display: inline-flex;
+    align-items: center;
+    background-color:rgb(61, 226, 61);
+    border: none;
+    height: 30px;
+    padding-top: 7px;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Lora', serif;
+    font-family: 'Sono', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+
+}

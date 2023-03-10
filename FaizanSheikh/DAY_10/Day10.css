@@ -1,0 +1,25 @@
+#firstname{
+    background-color: blue;
+}
+
+#lastname{
+    background-color: brown;
+}
+
+#address{
+    background-color: rgb(244, 0, 81);
+}
+
+#email{
+    background-color: yellow;
+}
+
+.common{
+
+    width: 350px;
+    height: 50px;
+    margin-top: 20x;
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
