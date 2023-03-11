@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 11</title>
+    <style>
+
+        .type1{
+            display:block;
+            margin: 0px auto;
+            width="15%";
+            height="5%";
+        }
+
+        table{
+            width:500px;
+            margin: auto;
+            text-align: center;
+            font-family: Arial;
+        }
+
+        table, th, td{
+            border-collapse: collapse;
+            border: 2px solid black;
+            padding: 15px;
+            font-size: 15px;
+        }
+
+        /* for first column make bold */
+        td:first-child{
+            font-weight: bold;
+        }
+
+        /* colour the particular column */
+        td:nth-child(4n+2){
+            background-color: rgb(30, 30, 231);
+        }
+        td:nth-child(4n+4){
+            background-color: rgb(224, 23, 23);
+        }
+
+    </style>
+</head>
+<body>
+    <img src="gpay-img.png" class="type1"></a>
+
+    <table>
+
+        <tr>
+            <th> </th>
+            <th>Invest</th>
+            <th> </th>
+            <th>Profit</th>
+        </tr>
+        <tr>
+            <td>Day 1</td>
+            <td>₹20</td>
+            <td>5 minutes later</td>
+            <td>₹108</td>
+        </tr>
+        <tr>
+            <td>Day 2</td>
+            <td>₹50</td>
+            <td>30 minutes later</td>
+            <td>₹586</td>
+        </tr>
+        <tr>
+            <td>Day 5</td>
+            <td>₹100</td>
+            <td>1 hour later</td>
+            <td>₹1058</td>
+        </tr>
+        <tr>
+            <td>Day 7</td>
+            <td>₹586</td>
+            <td>1 day later</td>
+            <td>₹5632</td>
+        </tr>
+    </table>
+</body>
+</html>
