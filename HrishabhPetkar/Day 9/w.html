@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {background-image: url('blue.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;}
+    </style>
+    <div class="container">
+        <br>
+          <h1><font face="times new roman" color="white"><b>My First Form</b></font></h1>
+        <br>
+        <div id="form">
+          <form>
+
+            <div class="form-group">
+              <label for="Name"><font face="times new roman"><b>Name</b></font></label>
+              <input type="text" class="form-control form-data" id="Name">
+            </div>
+
+            <div class="form-group">
+              <label for="Email"><font face="times new roman"><b>Email</b></font></label>
+              <input type="text" class="form-control form-data" id="Email">
+            </div>
+
+            <div class="form-group">
+              <label for="Age"><font face="times new roman"><b>Age</b></font></label>
+              <input type="text" class="form-control form-data" id="Age">
+            </div>
+
+            <div class="form-group">
+              <label for="Mob"><font face="times new roman"><b>Mob</b></font></label>
+              <input type="text" class="form-control form-data" id="Mob">
+            </div>
+
+            <input type="checkbox" name="vehicle1" value="Bike">
+        <label for="vehicle1">Remember me</label><br>
+
+            <button type="button" class="btn btn-primary" onclick="send_data()">Submit</button>
+
+          </form>
+        </div>
+      </div> 
+</body>
+</html>
