@@ -1,0 +1,49 @@
+#firstname{
+    background-color: blue;
+}
+
+#lastname{
+    background-color: brown;
+}
+
+#address{
+    background-color: purple;
+}
+
+#email{
+    background-color: gray;
+}
+
+#password{
+    background-color: chocolate;
+}
+
+#Time{
+    background-color: yellow;
+}
+
+#date{
+    background-color: aqua;
+}
+
+#gender{
+    background-color: greenyellow;
+}
+
+#range{
+    background-color: darkslategray;
+    height: 170px
+    
+}
+
+
+
+.common{
+
+    width: 350px;
+    height: 50px;
+    margin-top: 20x;
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
