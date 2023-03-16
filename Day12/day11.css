@@ -1,0 +1,51 @@
+#firstname{
+    background-color: red;
+ }
+ 
+ #lastname{
+    background-color: green;
+ }
+ 
+ #address{
+ background-color:coral;
+ }
+ #email{
+ 
+     background-color:cadetblue;
+ }
+
+ #password{
+    background-color: burlywood;
+ }
+ 
+ #time{
+    background-color:thistle;
+ }
+
+ #date{
+    background-color:slategray;
+ }
+
+ #range{
+    background-color:violet;
+    height:170px
+ }
+ #gender{
+    background-color: darkgray;
+    height:400px
+ }
+
+ #button1{
+    background-color: tan;
+ }
+
+ 
+ .common{
+     width:350px;
+     height: 50px;
+     margin-left: 20px;
+     margin-top: 20x;
+     padding-left: 10px;
+     padding-top: 10px;
+ }
+ 
