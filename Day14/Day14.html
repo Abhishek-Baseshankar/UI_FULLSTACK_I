@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day14</title>
+    <style>
+        #signal #signal2 signal3{
+            height:50px;
+            width:50px;
+            border-radius: 100%;
+            background-color:white;
+        }
+        #main{
+            width:100%;
+            height: 100%;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+      
+      var num=438
+      
+      //this is if-else code for finding the even snd odd numbers
+    //   if(num%2==0){
+    //     console.log("Its an Even number")
+    //   }else{
+    //     console.log("Its an Odd Number")
+    //   }
+
+
+
+   
+       
+   function checkAnswer(){
+
+    var data = document.getElementById("ans").value 
+    if(data=="world wide web"){
+        document.getElementById("main").style.backgroundColor='green';
+    }else{
+        document.getElementById("main").style.backgroundColor='red';
+    }
+         
+   }
+
+   
+
+
+    </script>
+    <div id="main">
+
+     <h3>Que :What is full form of www?</h3>
+     Please Write your Answer :<input id="ans" type="text">
+
+     <input type="button" value="Submit Answer" onclick="checkAnswer()">
+
+     <div id="signal1"></div>
+     <div id="signal2"></div>
+     <div id="signal3"></div>
+     </div>
+
+    
+</body>
+</html>
