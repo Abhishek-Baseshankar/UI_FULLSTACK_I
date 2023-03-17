@@ -1,0 +1,52 @@
+#firstname{
+    background-color:yellowgreen;
+ }
+ 
+ #lastname{
+    background-color: blue;
+ }
+ 
+ #address{
+ background-color:pink;
+ }
+ .outerbox{
+    width: 400px;
+    background-color: beige;
+    margin: auto;
+ }
+ #email{
+ 
+     background-color:blanchedalmond;
+ }
+ 
+ #Hobbies{
+     background-color: cornflowerblue;
+     height:100px
+ }
+ #time{
+    background-color: blueviolet;
+ }
+ #date{
+    background-color: cadetblue;
+ }
+ #Password{
+    background-color: darkgreen;
+ }
+ #range{
+    background-color: brown;
+   height: 80px;
+ }
+ #submit{
+    margin-left: 150px;
+    margin-top: 20px;
+ }
+ 
+ .common{
+     width:350px;
+     height: 50px;
+     margin-left: 20px;
+     margin-top: 20x;
+     padding-left: 10px;
+     padding-top: 10px;
+ }
+ 
