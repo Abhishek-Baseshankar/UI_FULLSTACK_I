@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkAnswer</title>
+    <style>
+
+     #signal1{
+        background-color:transparent;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        }
+     #signal2{
+        background-color:transparent;
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+     }
+      #pranju{
+        width:500px;
+        height: 100px;
+        background-color: gray;
+        padding: 15px;
+
+     }
+     body {
+        height: 100vh;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(135, 235, 163);
+
+     }
+     
+     h4{
+        margin-left: 50px;
+
+     }
+    </style>
+</head>
+<body>
+    <script>
+        function checkAnswer (){
+            var data = document.getElementById("ans").value
+            if (data=="Cascading Style Sheets"){
+           document.getElementById("signal1").style.backgroundColor ='green';
+        }else{   
+            document.getElementById("signal2").style.backgroundColor ='red';
+
+         }
+        }  
+
+
+    </script> 
+
+    <div id="pranju">
+        <h4>What is full form of CSS </h4>
+        Write correct Answer :<input id="ans" type="text">
+        <input type="button" value="Submit" onclick="checkAnswer()">
+        <div id="signal1"></div> 
+        <div id="signal2"></div> 
+
+    </div>
+
+</body>
+</html>
