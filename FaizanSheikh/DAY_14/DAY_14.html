@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY_14</title>
+    <style>
+        #signal{
+            height: 50px;
+            width: 50px;
+            border-radius: 100%;
+            background-color: white;
+        }
+
+        #main{
+            width: 100%;
+            height: 100%;
+            background-color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <script>
+        var num=438
+        // this is if_else code for finding the even & odd number
+       // if(num==1){
+         //   console.log("one")
+        //}else{
+          //  console.log("its not a one number")
+        //}
+
+        
+        function checkAnswer(){
+
+            var data = document.getElementById("ans").value
+
+        if(data=="world wide web"){
+            document.getElementById("main").style.backgroundColor ="green";
+        }else{
+            document.getElementById("main").style.backgroundColor ="red";
+        }
+    }
+
+    </script>
+    <div id="main">
+
+    <h3>QUE : What is Full Form of WWW ?</h3>
+    Please write your Answer :<input id="ans" type="text">
+
+    <input type="button" value="submit Answer" onclick="checkAnswer()">
+    
+    <div id="signal">
+
+
+    </div>
+</div>
+
+
+</body>
+</html>
