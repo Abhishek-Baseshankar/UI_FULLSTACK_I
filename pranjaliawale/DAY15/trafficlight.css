@@ -1,0 +1,29 @@
+.trafficbox{
+    height: 300px;
+    width: 100px;
+    border: 2px solid black;
+    margin: 150px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: black;
+}
+.circle{
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    border: 2px solid brown;
+}
+.place-btns{
+    margin-top: 8px;
+    height: 50px;
+    width: 50px
+   
+}
+.btn{
+    border-radius: 9px;
+    padding: 7px;
+    height: 50%;
+    width: 50%;
+}

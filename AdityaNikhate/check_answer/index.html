@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Paper</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Lilita+One&family=Michroma&family=Rubik+Iso&family=Titan+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Lilita+One&family=Michroma&family=Titan+One&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgba(215, 209, 209, 0.85);
+        }
+        #heading{
+            text-align: center;
+            margin-bottom: 10px;
+            color: rgb(90, 83, 90);
+            font-family: 'Lato', sans-serif;
+            font-family: 'Lilita One', cursive;
+            font-family: 'Michroma', sans-serif;
+            font-family: 'Titan One', cursive;
+            font-weight: 5;
+            font-size: 40px;
+        }
+        .container{
+            background-color: rgba(142, 142, 142, 0.3);
+            width: 380px;
+            padding: 15px;
+    
+        }
+        .correct, .incorrect{
+            width: 30px;
+            height: 30px;
+            background-color:transparent;
+            border-radius: 100%;
+        }
+        .ans{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        #que1{
+            font-size: 20px;
+            color: rgb(50, 47, 50);
+        }
+        #que{
+            background: transparent;
+            border: none;
+            font-size: 20px;
+            border-bottom: 3px solid rgb(10, 4, 4);
+            width: 100px;
+        }
+        #submit{
+            float: right;
+            margin-right: 0px;
+            margin-top: 3px;
+            font-size: 20px;
+            font-family: 'Lato', sans-serif;
+            font-family: 'Lilita One', cursive;
+            color: rgb(90, 83, 90);
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+
+        }
+        input:focus{
+        outline: none;
+        }
+        .text{
+            font-weight: lighter;
+            font-family: 'Lato', sans-serif;
+            font-family: 'Lilita One', cursive;
+            font-family: 'Michroma', sans-serif;
+            font-family: 'Titan One', cursive;
+            color: red;
+            margin-top: 2px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function checkAnswer(){
+            event.preventDefault();
+            var data = document.getElementById("que").value;
+            data = data.toLowerCase();
+            if(data==".html"){
+                document.getElementById("c").style.backgroundColor='green';
+                document.getElementById("word").innerHTML ="<spam style='color:green'>Correct</spam>";
+
+            }else{
+                document.getElementById("ic").style.backgroundColor='red';
+                document.getElementById("word").innerHTML ="<spam style='color:red'>Wrong</spam>";
+
+            }
+        }
+    </script>
+    <div class="container">
+        <h2 id="heading">Best of Luck!!</h2>
+        <form class="form">
+            <label for="que" id="que1">HTML file extension:</label>
+            <input type="text" id="que">
+            <button onclick="checkAnswer()" id="submit" type="submit">Submit <i class="fa fa-mail-forward"></i></button>
+            <!-- <input type="button"  value="submit" onclick="checkAnswer()"> -->
+
+        </form>
+        <div class="ans">
+        <div class="correct" id="c"></div>
+        <div class="text" id="word"></div>
+        <div class="incorrect" id="ic"></div>
+        </div>
+    </div>
+</body>
+</html>

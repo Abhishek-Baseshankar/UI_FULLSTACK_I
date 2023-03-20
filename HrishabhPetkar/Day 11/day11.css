@@ -1,0 +1,59 @@
+#firstname{
+    background-color: red;
+}
+
+#lastname{
+    background-color: green;
+}
+
+#address{
+    background-color: blue;
+}
+
+#email{
+    background-color: yellow;
+}
+
+#password{
+    background-color: rgb(18, 207, 210);
+}
+
+#time{
+    background-color: rgb(212, 4, 178);
+}
+
+#date{
+    background-color: rgb(9, 179, 77);
+}
+
+#range{
+    background-color: rgb(10, 205, 219);
+    height: 170px;
+}
+
+#gender{
+    background-color: rgba(65, 5, 86, 0.416);
+    height: 100px;
+}
+
+#que{
+    background-color: rgba(54, 25, 64, 0.416);
+    height: 150px;
+}
+
+#textbox{
+    background-color: rgba(68, 77, 76, 0.908);
+}
+
+#button1{
+    background-color: rgba(4, 0, 5, 0.908);
+}
+.common{
+    width: 350px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 1px;
+    padding-left: 10px;
+    padding-top: 10px;
+
+}

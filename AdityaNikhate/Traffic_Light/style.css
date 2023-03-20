@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: antiquewhite;
+}
+.container{
+    align-items: center;
+    height: 40vh;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    top: 200px;
+}
+
+/* making of remote */
+.remote{
+    width: 120px;
+    height: 250px;
+    background-color: rgb(6,5,5,0.24);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+    padding: 10px;
+}
+/* buttons */
+#but1, #but2, #but3{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    opacity: 0.7;
+    cursor: pointer;
+}
+p{
+    margin-top: 16px;
+    font-weight: bold;
+}
+
+#but1:hover,#but2:hover, #but3:hover{
+    opacity: 1;
+    border: 2px solid rgb(57, 56, 56);
+    font-size: 18px;
+}
+
+/* signal */
+.signal{
+    width: 80px;
+    height: 150px;
+    background-color: rgba(15, 14, 14,0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+    padding: 10px;
+}
+#red,#yellow,#green{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(253, 243, 243,0.1);
+    border-radius: 100%;
+    text-align: center;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
