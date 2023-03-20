@@ -1,0 +1,39 @@
+/* #red{
+
+}
+
+#green{
+    
+}
+
+#yellow{
+
+} */
+
+.colourChart{
+    height: 30px;
+    width: 100px;
+    background-color: grey;
+    padding-top:5px ;
+    margin-top: 5px;
+    padding-left :10px;
+}
+#parent1{
+    width: 296px;
+    height: 147px;
+    background-color: beige;
+    padding-top: 25px;
+    padding-left: 20px;
+ 
+}
+
+#displayColour{
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    padding-top: 25px;
+    padding-left: 20px;
+    border-radius: 25%;
+}
+
+

@@ -1,0 +1,27 @@
+#firstName{
+    background-color: burlywood;
+}
+
+#lastName{
+    background-color: cornsilk;
+}
+
+#address{
+    background-color: darksalmon;
+}
+
+#email{
+    background-color: floralwhite;
+}
+
+#hobbies{
+    height: 100px;
+    background-color: lightblue;
+}
+.common{
+    width:250px;
+    height: 50px;
+    margin-top: 20px;
+    padding-left:10px ;
+    padding-top: 10px;
+}
