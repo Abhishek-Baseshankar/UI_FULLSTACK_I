@@ -1,0 +1,36 @@
+#firstDiv{
+    width: 306px;
+    height: 100px;
+    border-radius: 53%;
+    background-color: brown;
+    margin-left: 178px;
+    padding-top: 55px;
+    padding-left: 161px;
+}
+
+#secondtDiv{
+    
+    width:100px;
+    height: 100px;
+    background-color: green;
+    margin: 150px;
+
+}
+#thirdDiv{
+    
+    width:100px;
+    height: 100px;
+    background-color: green;
+    margin: 254px;
+
+}
+
+#fourthdiv{
+    width: 306px;
+    height: 100px;
+    border-radius: 53%;
+    background-color: brown;
+    margin-left: 178px;
+    padding-top: 55px;
+    padding-left: 161px;
+}
