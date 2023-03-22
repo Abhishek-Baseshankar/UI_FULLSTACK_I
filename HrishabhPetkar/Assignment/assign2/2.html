@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #signal1{
+            height: 50px;
+            width: 1450px;
+            border-radius: 0%;
+            background-color: white;
+            float: left;
+            
+            margin-top: 10px;
+        }
+
+        /* #signal2{
+            height: 50px;
+            width: 350px;
+            border-radius: 0%;
+            background-color: white;
+            float: left;
+            
+            margin-top: 10px;
+        } */
+
+        #main{
+            width: 100%;
+            height: 100%;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+        function checkAnswer(){
+
+var data = document.getElementById("ans").value  
+
+    if(data =="Tim Berners-Lee"){
+        document.getElementById("signal1").style.backgroundColor="green";
+    }else{
+        document.getElementById("signal1").style.backgroundColor="red"; 
+    }
+}
+    </script>
+
+    <div id="main">
+        <h2>QUE: How has written the first version of HTML?</h2>
+        please write your answer :<input id="ans" type="text">
+
+    <input type="button" value="Submit Answer" onclick="checkAnswer()"><br>
+
+    <div id="signal1"></div>
+    <!-- <div id="signal2"></div> -->
+</div>
+
+</body>
+</html>
