@@ -1,0 +1,19 @@
+#firstDiv{
+    width: 306px;
+    height: 100px;
+    border-radius: 53%;
+    background-color: brown;
+    margin-left: 178px;
+    padding-top: 55px;
+    padding-left: 161px;
+}
+
+
+.blinkdiv{
+
+    background-color: green;
+    width:100px;
+    height: 100px;
+    margin-bottom: 10px;
+
+}
