@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos&family=Lilita+One&family=Lora:ital@1&family=Sono:wght@600&family=Tiro+Devanagari+Marathi&family=Varela+Round&display=swap');
+body{
+    background-color: bisque;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    margin-top: 20px;
+    /* background-color: red; */
+}
+.signal{
+    background-color: rgb(4, 3, 3,0.9);
+    width: 150px;
+    height: 220px;
+    margin: 20px;
+}
+/* for middle portion */
+#mid-portion{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* For Signals  */
+/* for top signals */
+#top{
+    margin: auto;
+}
+#down{
+    margin: auto;
+}
+
+
+
+/* Button to start and stop */
+#button_pannel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* padding-top: 5px;
+    padding-bottom: 5px; */
+    background-color: transparent;
+
+}
+
+.buttons{
+    height: 40px;
+    width: 120px;
+    background-color: rgb(79, 79, 219);
+    border-radius: 2px;
+    border: 4px double rgb(226, 89, 43);
+}
+
+#start{
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Genos', sans-serif;
+    font-family: 'Lilita One', cursive;
+    font-family: 'Lora', serif;
+    font-family: 'Sono', sans-serif;
+    font-family: 'Tiro Devanagari Marathi', serif;
+    font-family: 'Varela Round', sans-serif;
+    cursor: pointer;
+
+}
+.buttons:hover{
+    border-color: rgb(47, 255, 47);
+    background-color: rgb(23, 23, 236);
+}
+#stop{
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Genos', sans-serif;
+    font-family: 'Lilita One', cursive;
+    font-family: 'Lora', serif;
+    font-family: 'Sono', sans-serif;
+    font-family: 'Tiro Devanagari Marathi', serif;
+    font-family: 'Varela Round', sans-serif;
+    cursor: pointer;
+}
+
+p{
+    font-weight: bolder;
+    font-size: larger;
+    margin-top: 10px;
+}
+
+/* Internal circles */
+.dir{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 220px;
+}
+.circle{
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+    background-color: rgba(67, 64, 64, 0.5);
+}
+.direction{
+    height: 50px;
+    width: 150px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.dir_cir{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background-color: rgba(67, 64, 64, 0.5);
+}
+
+span{
+    color: #1b1616;
+    padding-left: 6px;
+    padding-top: 6px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.mid-arrow{
+    padding-left: 11px;
+}
+
+/* Text23 css */
+.text123{
+    color: rgb(224, 128, 128);
+    font-family: 'Lora', serif;
+    font-family: 'Sono', sans-serif;
+    font-family: 'Tiro Devanagari Marathi', serif;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+}

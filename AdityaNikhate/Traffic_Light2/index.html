@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Traffic Control</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="signal" id="top" onclick="toplight()">
+            <div class="dir">
+            <div class="circle" id="top-red"></div>
+            <div class="circle" id="top-yellow"></div>
+            <div class="direction">
+                <div class="dir_cir"><span id="top-green1">&#8678</span></div>
+                <div class="dir_cir"><span class="mid-arrow" id="top-green2">&#8679</span></div>
+                <div class="dir_cir"><span id="top-green3">&#8680</span></div>
+            </div>
+            </div>
+        </div>
+        <div id="mid-portion">
+        <div class="signal" id="left" onclick="leftlight()">
+            <div class="dir">
+                <div class="circle" id="left-red"></div>
+                <div class="circle" id="left-yellow"></div>
+                <div class="direction">
+                    <div class="dir_cir"><span id="left-green1">&#8678</span></div>
+                    <div class="dir_cir"><span class="mid-arrow" id="left-green2">&#8679</span></div>
+                    <div class="dir_cir"><span id="left-green3">&#8680</span></div>
+                </div>
+                </div>
+        </div>
+        <div class="signal" id="button_pannel">
+            <div class="buttons" id="start" onclick="startlight()"><p>START</p></div>
+            <div class="buttons" id="stop" onclick="stoplight()"><p>STOP</p></div>
+        </div>
+        <div class="signal" id="right" onclick="rightlight()">
+            <div class="dir">
+                <div class="circle" id="right-red"></div>
+                <div class="circle" id="right-yellow"></div>
+                <div class="direction">
+                    <div class="dir_cir"><span id="right-green1">&#8678</span></div>
+                    <div class="dir_cir"><span class="mid-arrow" id="right-green2">&#8679</span></div>
+                    <div class="dir_cir"><span id="right-green3">&#8680</span></div>
+                </div>
+                </div>
+        </div>
+        </div>
+        <div class="signal" id="down" onclick="downlight()">
+            <div class="dir">
+                <div class="circle" id="down-red"></div>
+                <div class="circle" id="down-yellow"></div>
+                <div class="direction">
+                    <div class="dir_cir"><span id="down-green1">&#8678</span></div>
+                    <div class="dir_cir"><span class="mid-arrow" id="down-green2">&#8679</span></div>
+                    <div class="dir_cir"><span id="down-green3">&#8680</span></div>
+                </div>
+                </div>
+        </div>
+    </div>
+    <div class="text123">
+        <h1>Press any signal or start button to activate signal.</h1>
+    </div>
+</body>
+</html>
