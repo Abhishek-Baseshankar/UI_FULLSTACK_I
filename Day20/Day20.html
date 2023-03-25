@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance CSS</title>
+    <style>
+        .container{
+            width:400px;
+            height:400px;
+            background-color: antiquewhite;
+            position: relative;
+        }
+
+        .box{
+            width:100px;
+            height: 100px;
+        }
+        .red{
+            background-color: red;
+            position: relative;
+            top:320px;
+            left:220px;
+            z-index: 2;
+        }
+        .green{
+            background-color: green;
+            position: absolute;
+            top:300px;
+            left:300px;
+        }
+        .blue{
+            background-color: blue;
+            position: fixed;
+            top:173px;
+            left:59px;
+        }
+
+        .purple{
+            background-color: purple;
+            position: sticky;
+            top:40px;
+            left:40px;
+        }
+        .scrollable{
+            height: 300vh;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box  blue"></div>
+        <div class="box purple"></div>
+    </div>
+
+    <div class="scrollable"></div>
+</body>
+</html>
