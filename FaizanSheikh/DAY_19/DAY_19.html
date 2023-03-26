@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY_19</title>
+    <style>
+        .fruits{
+            height:150px;
+            width:100px;
+            margin: 92px;
+            display: none;;
+        }
+        table,td,th{
+            border:1px solid;
+        }
+    </style>
+</head>
+<body>
+    Enter your most likely fruit  :<input id="inputId" type="text">
+    <button style="width:30px;height: 30px;background-color: rgb(0, 0, 0);" onclick="showFruit()"></button>
+    
+    <div class="fruits" id="b">
+        <img src="banana.jfif">
+    </div>
+     <div class="fruits" id="g">
+        <img src="greps.jfif">
+     </div>
+      <div class="fruits" id="m">
+        <img src="mango.jfif">
+      </div>
+       <div class="fruits" id="o">
+        <img src="orange.jfif">
+       </div>
+       <div id="mytable"></div>
+</body>
+<script>
+    function showFruit(){
+        var input1 = document.getElementById("inputId").value
+
+        var fruitList = document.getElementsByClassName("fruits")
+        
+        for(let fruit of fruitList){
+            console.log(fruit+"  =====> ")
+            fruit.style.display='none'
+        }
+
+        switch(input1){
+            case "banana":
+                document.getElementById("b").style.display="block";
+                break;
+            case "greps" :
+                document.getElementById("g").style.display="block";
+                break; 
+            case "mango" :
+                document.getElementById("m").style.display="block";
+                break;    
+            case "orange" :
+                document.getElementById("o").style.display="block";
+                break;    
+        }
+
+        var tableCreation = "<table><tr><th>SN</th><th>Name</th></tr><tr><td>1</td><td>Faizan</td></tr><tr><td>2</td><td>Hrishabh</td></tr></table>"
+        
+         document.getElementById("mytable").innerHTML = tableCreation; 
+
+
+    }
+</script>>
+</html>
