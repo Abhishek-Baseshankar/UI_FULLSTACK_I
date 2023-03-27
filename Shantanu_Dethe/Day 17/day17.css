@@ -1,0 +1,17 @@
+#container{
+    margin-left: 40%;
+    margin-right: 60%;
+    background-color: aqua;
+    display: flex;
+    margin-top: 30%;
+    margin-bottom: 70%;
+
+}
+#button{
+    background-color: black;
+
+}
+#remote{
+    background-color: bisque;
+
+}
