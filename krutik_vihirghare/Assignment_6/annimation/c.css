@@ -1,0 +1,233 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.block{
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+    padding: 10px;
+    position: relative;
+}
+
+.squares{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+#square1{
+    background-color: red;
+    position: relative;
+    border-radius: 25%;
+    bottom: -520px;
+    left: 0px;
+
+}
+
+#square2{
+    background-color: green;
+    position: fixed;
+    border-radius: 25%;
+    top: 1.5%;
+    right: 0.8%;
+}
+
+#square3{
+    background-color: blue;
+    position: absolute;
+    border-radius: 25%;
+    bottom: 35px;
+    right: 33px;
+}
+
+#square4{
+    background-color: orange;
+    position: sticky;
+    border-radius: 25%;
+    top: 10px;
+    margin-top: -400px;
+}
+
+
+.mega{
+    height: 300vh;
+}
+
+.drop{
+    background: linear-gradient(315deg,red,orange,yellow);
+    width: 500px;
+    height: 500px;
+    position: relative;
+    top: 100px;
+    left: 470px;
+    padding: 10px;
+}
+
+#droplet1{
+    background-color: rgb(255, 0, 93);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: relative;
+    top: -55px;
+    left: -280px;
+    animation-name: ball1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes ball1 {
+    0%{
+        top: -50px;
+        left: -280px;
+        width: 90px;
+    }
+    50%{
+        top: -50px;
+        left: 727px;
+        width: 90px;
+    }
+    100%{
+        top: -50px;
+        left: -280px;
+        width: 90px;
+    }
+}
+
+
+#droplet2{
+    background-color: red;
+    width: 60px;
+    height: 60px;
+    border-radius: 100% 100% 100% 0% 100% 100%;
+    position: relative;
+    bottom: 0;
+    left: 875px;
+    animation-name: box1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+/* @keyframes box1 {
+    0%{
+        bottom: -50px;
+        right: -280px;
+        width: 90px;
+    }
+    50%{
+        top: 261px;
+        right: 0px;
+        width: 90px;
+    }
+    100%{
+        bottom: -50px;
+        right: -280px;
+        width: 90px;
+    }
+} */
+
+@keyframes box1 {
+    0%{
+        bottom: -261px;
+        left: 875px;
+        width: 90px;
+    }
+    50%{
+        bottom: 0px;
+        left: 875px;
+        width: 90px;
+    }
+    100%{
+        bottom: -261px;
+        left: 875px;
+        width: 90px;
+    }
+}
+
+#droplet3{
+    background-color:rgb(14, 86, 93);
+    width: 60px;
+    height: 60px;
+    border-radius: 0%;
+    position: relative;
+    top: -60px;
+    left: -425px;
+    animation-name: box2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes box2 {
+    0%{
+        bottom: -50px;
+        right: -280px;
+        width: 90px;
+    }
+    50%{
+        top: 201px;
+        right: 0px;
+        width: 90px;
+    }
+    100%{
+        bottom: -50px;
+        right: -280px;
+        width: 90px;
+    }
+}
+
+#droplet4{
+    background-color: rgb(169, 31, 182);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: relative;
+    top: -55px;
+    left: -280px;
+    animation-name: ball2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/* @keyframes ball2 {
+    0%{
+        top: 260px;
+        left: -280px;
+        width: 90px;
+    }
+    50%{
+        top: 260px;
+        left: 727px;
+        width: 90px;
+    }
+    100%{
+        top: 260px;
+        left: -280px;
+        width: 90px;
+    }
+} */
+
+@keyframes ball2 {
+    0%{
+        top: 260px;
+        left: 727px;
+        width: 90px;
+    }
+    50%{
+        top: 260px;
+        left: -280px;
+        width: 90px;
+    }
+    100%{
+        top: 260px;
+        left: 727px;
+        width: 90px;
+    }
+}
