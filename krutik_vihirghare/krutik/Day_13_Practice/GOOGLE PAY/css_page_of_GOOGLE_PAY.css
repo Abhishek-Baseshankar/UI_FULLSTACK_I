@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos&family=Lora:ital@1&family=Sono:wght@600&family=Varela+Round&display=swap');
+
+*{
+  font-family: 'Genos', sans-serif;
+  font-family: 'Lora', serif;
+  font-family: 'Sono', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+table,  td {
+    border: 3px solid black;
+    border-collapse: collapse;
+  }
+
+.head{
+    background-color: darkorange;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+    width: 90px;
+    text-align: center;
+}
+
+td{
+    padding: 15px;
+    height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+    
+.first{
+  background-color: blue;
+  padding:auto;
+  font-size: 25px;
+  text-align: center;
+}
+  
+.second{
+    background-color:red;
+    padding: 20px;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+}
+    
+#gpay{
+    width: 240px;
+    margin-left: 112px;
+    transition: scale 2s ease;
+}
+
+#logo:hover{
+    scale:1.2;
+}
+
+.common{
+    background-color: darkorange;
+    font-weight: bold;
+    font-size: large;
+}
+    
+.minute{
+    background-color: darkorange;
+    font-weight: bold;
+    font-size: medium;
+    color: black;
+    text-align: center;
+}

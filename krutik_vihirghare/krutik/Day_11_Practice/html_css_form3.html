@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML_CSS_FORM_3</title>
+    <style>
+        ::placeholder{
+            color: black;
+            opacity: 100%;
+        }
+    </style>
+    <link rel="stylesheet" href="html_css_form3.css">
+</head>
+<body>
+    <center>
+    <h1><span style="color: red;">MY</span><span style="color: green;">THIRD</span><span style="color: blue;">HTML</span><span style="color: orange">AND</span><span style="color: rgb(255, 230, 0);">CSS</span><span style="color: brown;">FORM</span></h1>
+    </center>
+    <form action="massage_form.html" method="get">
+        <div id="firstname1" class="common">
+            <label for="firstname"><b>FirstName:</b></label>
+            <input id="firstname1" type="text" placeholder="Enter Your FirstName">
+        </div>
+
+        <div id="middlename2" class="common">
+            <label for="middlename"><b>MiddleName:</b></label>
+            <input id="middlename2" type="text" placeholder="Enter Your MiddleName">
+        </div>
+
+        <div id="lastname3" class="common">
+            <label for="lastname"><b>LastName:</b></label>
+            <input id="lastname3" type="text" placeholder="Enter Your LastName">
+        </div>
+
+        <div id="emailid4" class="common">
+            <label for="email id"><b>Email ID:</b></label>
+            <input id="emailid4" type="text" placeholder="Enter Your Email ID">
+        </div>
+
+        <div id="phoneno5" class="common">
+            <label for="phone no"><b>Phone No.:</b></label>
+            <input id="phoneno5" type="text" placeholder="Enter Your Phone No.">
+        </div>
+
+        <div id="dateofbirth6" class="common">
+            <label for="date of birth"><b>Date of Birth:</b></label>
+            <input id="dateofbirth6" type="date">
+        </div>
+
+        <div id="password7" class="common">
+            <label for="password"><b>Password</b></label>
+            <input id="password7" type="password" placeholder="Password">
+        </div>
+
+        <div id="gender" class="common">
+            <h3 style="margin: 0%;">Select Gender</h3>
+
+            <input id="Male" type="radio" name="gender" value="Male">
+            <label for="Male">Male</label>
+            <br>
+            <input id="Female" type="radio" name="gender" value="Female">
+            <label for="Female">Female</label>
+            <br>
+            <input id="Transgender" type="radio" name="gender" value="Transgender">
+            <label for="Transgender">Transgender</label>
+        </div>
+
+        <div id="subjectfeedback" class="common">
+            <h3 style="margin: 0%;">Subject Feedback</h3>
+            <label for="subjectfeedback">Physic</label>
+            <input id="subjectfeedback" type="range" name="subjectfeedback" value="Physic" min="0" max="10" step="1"><br>
+            <label for="subjectfeedback">Chemistry</label>
+            <input id="subjectfeedback" type="range" name="subjectfeedback" value="Chemistry" min="0" max="10" step="1"><br>
+            <label for="subjectfeedback">Biology</label>
+            <input id="subjectfeedback" type="range" name="subjectfeedback" value="Biology" min="0" max="10" step="1"><br>
+            <label for="subjectfeedback">Mathematics</label>
+            <input id="subjectfeedback" type="range" name="subjectfeedback" value="Mathematics" min="0" max="10" step="1">
+        </div>
+
+        <div id="comment" class="common">
+            <label for="comment" style="margin: auto;">Comment:</label>
+            <input id="comment" type="comment" placeholder="Enter Your Comment">
+        </div>
+        <br>
+        <br>
+        <div>
+            <input id="submit" type="submit" value="Submit">
+            <a href="massage_form.html"></a>
+        </div>
+
+        </div>
+    </form>
+</body>
+</html>
