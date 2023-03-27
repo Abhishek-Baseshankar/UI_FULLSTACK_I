@@ -1,0 +1,166 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+    padding: 10px;
+    position: relative;
+}
+
+.boxes {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+#box-1 {
+    background-color: rgb(230, 59, 212);
+    position: relative;
+    bottom: -520px;
+    left: 0px;
+
+}
+
+#box-2 {
+    background-color: rgb(71, 238, 16);
+    position: fixed;
+    top: 1.5%;
+    right: 0.8%;
+}
+
+#box-3 {
+    background-color: rgb(237, 241, 33);
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+}
+
+#box-4 {
+    background-color: rgb(33, 250, 250);
+    position: sticky;
+    top: 10px;
+    margin-top: -400px;
+}
+
+
+.down {
+    height: 300vh;
+}
+
+
+/* 
+ */
+.animation1 {
+    background-color: rgb(96, 68, 34);
+    width: 500px;
+    height: 500px;
+    position: relative;
+    top: 100px;
+    left: 470px;
+    padding: 10px;
+}
+
+#aniBox {
+    background-color: rgb(255, 0, 93);
+    width: 60px;
+    height: 60px;
+    border-radius: 100% 100% 100% 0%;
+    position: relative;
+    animation-name: ball;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+
+}
+
+@keyframes ball {
+    0% {
+        top: 0;
+        left: 0;
+        /* background-color: rgb(230, 59, 212); */
+        background-color: rgb(33, 250, 250);
+        /* transform: rotate(540deg); */
+        transform: rotate(180deg);
+    }
+
+    25% {
+        top: 0;
+        left: 440px;
+        background-color: rgb(71, 238, 16);
+        transform: rotate(-540deg);
+    }
+
+    50% {
+        top: 440px;
+        left: 440px;
+        background-color: rgb(237, 241, 33);
+        /* transform: rotate(630deg); */
+        transform: rotate(270deg);
+    }
+
+    75% {
+        top: 440px;
+        left: 0;
+        background-color: rgb(230, 59, 212);
+        transform: rotate(-360deg);
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+        background-color: rgb(33, 250, 250);
+        transform: rotate(450deg);
+    }
+}
+
+
+
+
+/* mario */
+
+.mario{
+    width: 60px;
+    height: 100px;
+    position: relative;
+    animation-name: mario;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    top: -100px;
+    left: 77px;
+}
+@keyframes mario {
+    0%{
+        top: -100px;
+        left: 77px;
+        transform: scaleX(1);
+    }
+    25%{
+        top: -512px;
+        left: 431px;
+        transform: scaleX(1);
+    }
+    50%{
+        top: -522px;
+        left: 968px;
+        transform: scaleX(1);
+    }
+    75%{
+        top: -100px;
+        left: 1370px;
+        transform: scaleX(1);
+    }
+    76%{
+        transform: scaleX(-1);
+    }
+    100%{
+        top: -100px;
+        left: 77px;
+        transform: scaleX(-1);
+    }
+}
