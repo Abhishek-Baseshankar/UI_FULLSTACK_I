@@ -1,0 +1,25 @@
+#signal #signal2 #signal3{
+    height:50px;
+    width:50px;
+    border-radius: 100%;
+    background-color:white;
+}
+
+#main{
+    width:100%;
+    height: 100%;
+    background-color: white;
+}
+
+#string1 #string2 #string3{
+    height:50px;
+    width:50px;
+    border-radius: 100%;
+    background-color:white;
+}
+
+#capital{
+    width:100%;
+    height: 100%;
+    background-color: white;
+}

@@ -1,0 +1,64 @@
+#firstname1{
+    background-color: red ;
+    margin-bottom: -20px;
+}
+
+#middlename2{
+    background-color: rgb(30, 0, 255);
+    color: #fff;
+    margin-bottom: -20px;
+}
+#lastname3{
+    background-color: rgb(0, 140, 40);
+    color: rgb(38, 255, 0);
+    margin-bottom: -20px;
+}
+
+#emailid4{
+    background-color: rgb(163, 50, 171);
+    color: aqua;
+    margin-bottom: -20px;
+}
+
+#phoneno5{
+    background-color: orange; 
+    margin-bottom: -20px;
+}
+
+#dateofbirth6{
+    background-color: orangered;
+    margin-bottom: -20px;
+}
+
+#password7{
+    background-color:rgb(152, 250, 219);
+    margin-bottom: -20px;
+}
+
+#gender{
+    background-color: chartreuse;
+    height: 100px;
+}
+
+#subjectfeedback{
+    background-color: #fff890;
+    height: 0%;
+}
+
+#comment{
+    background-color: bisque;
+}
+
+#submit{
+    border: 5px solid blueviolet;
+    margin-left: 380px;
+}
+
+.common{
+    width:350px;
+    height: 50px;
+    margin: auto;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 10px;
+}
