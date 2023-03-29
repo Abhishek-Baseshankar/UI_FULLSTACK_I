@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: bisque;
+    height: 100vh;
+    width: 100%;
+}
+.boxes{
+    width: 25vh;
+    height: 25vh;
+    background-color: blue;
+}
+#box1{
+    position: fixed;
+    bottom: 1vh;
+    left: 1vh;
+    background-color: rgb(239, 169, 84);
+}
+#box2{
+    position: fixed;
+    bottom: 1vh;
+    right: 1vh;
+    background-color: rgb(232, 148, 59);
+}
+#box3{
+    position: fixed;
+    bottom: 50vh;
+    left: 55vh;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(216, 178, 137);
+}
+
+#box4{
+    position: fixed;
+    bottom: 50vh;
+    left: 95vh;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(216, 178, 137);
+}
+#box5{
+    position: fixed;
+    bottom: 50vh;
+    left: 135vh;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(216, 178, 137);
+}
+#mario{
+    height: 100px;
+    width: 50px;
+    position: absolute;
+    top: 60.8vh;
+    left: 10vh;
+}
+#fire1{
+    height: 150px;
+    width: 200px;
+    position: fixed;
+    top: 38%;
+    left: 33%;
+}
+#fire2{
+    height: 150px;
+    width: 200px;
+    position: fixed;
+    top: 38%;
+    left: 52%;
+}
+#crown{
+    height: 80px;
+    width: 80px;
+    position: fixed;
+    bottom: 36%;
+    right: 4.5%;
+    display: none;
+}
