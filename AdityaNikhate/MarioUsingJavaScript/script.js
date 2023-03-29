@@ -25,7 +25,7 @@ function moveimg2(){
 
 function movestep3(){
     moveimg2();
-    step3= setTimeout(movestep3,100);
+    step3= setTimeout(movestep3,800);
 }
 var step2;
 function moveimg1(){
@@ -50,7 +50,7 @@ function moveimg1(){
 }
 function movestep1(){
     moveimg1();
-    step2=setTimeout(movestep1,60);
+    step2=setTimeout(movestep1,200);
 }
 
 function moveimg(){
