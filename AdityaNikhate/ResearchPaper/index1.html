@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Paper</title>
+    <style>
+        body{
+            margin: 1%;
+            border: 4px double rgb(100, 98, 98);
+            padding: 1%;
+            background-color: rgb(232, 231, 229);
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        span{
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        p{
+            text-align: justify;
+        }
+        #para1{
+            float: left;
+            width: 47%;
+            padding-right: 1%;
+            text-align: justify;
+        }
+        #para2{
+            clear: both;
+            width: 47%;
+            float: left;
+            padding-right: 1%;
+            text-align: justify;
+        }
+        #para3{
+            padding-top: 10px;
+        }
+
+        #Spara1{
+            float: left;
+            width: 47%;
+            padding-right: 1%;
+            
+        }
+        #Spara2{
+            clear: both;
+            width: 47%;
+            float: left;
+            padding-right: 1%;
+        }
+        #Spara3{
+            clear: both;
+            width: 47%;
+            float: left;
+            padding-right: 1%;
+        }
+        #Spara4{
+            padding-top: 10px;
+        }
+        @media only screen and (max-width: 600px) {
+            p{
+                padding-left: 1.5%;
+            }
+            #para1{
+            width: 96%;
+            text-align: justify;
+        }
+        #para2{
+            width: 96%;
+            text-align: justify;
+        }
+        #para3{
+            width: 96%;
+            text-align: justify;
+        } 
+        #Spara1{
+            width: 96%;
+            text-align: justify;
+            
+        }
+        #Spara2{
+            width: 96%;
+            text-align: justify;
+        }
+        #Spara3{
+            width: 96%;
+            text-align: justify;
+        }
+        #Spara4{
+            width: 96%;
+            text-align: justify;
+        }
+        }
+    </style>
+</head>
+<body>
+    <hr><hr>
+    <h1>New Technologies For Web Development</h1>
+    <hr><hr>
+    <div class="para para1">
+        <p id="para1">
+            <span>1  Introduction</span>
+        The concept of the World Wide Web is inseparably tied with the  Hyper Text  Markup Language  (HTML) - the language for describing web pages. HTML uses markup tags for  describing structural  semantics of  a web page by  denoting  its  elements:  sections,  paragraphs,  head-ings, tables, lists, interactive forms and others. Elements with their corresponding attributes can be nested one in another, forming a typical tree structure. HTML enables also the inclusion of external resources into web docu-ments, such as images, videos and other objects, which also become parts of a web page.One of the good  practices in  modern web develop-ment are separate definitions of structure and style. The general  structure  of  web  pages  and  their  content  are defined in HTML, while its final presentation and style are  in  the  domain  of  CSS  (Cascading  Style  Sheets). Such  separation  enables  better  flexibility  and  control over the final appearance of a web page and it also re-duces the complexity  of HTML  record and  eliminates the  redundancy in  style  definitions.  The separation  of the content from the  style enables more  web pages  to share the same style and also a single page to use many different styles at the same time. 
+    </p>
+        
+        <p id="para2">
+            <span>2  HTML5</span>
+            274   Jakus, Jekovec, Tomažič, Sodnik In the 1990’s majority of web pages were static and intended primarily for  reading and browsing while the first  decade of  the new  century  brings  more  dynamic web  pages and  applications.  Users  not only  “browse” the Web but also contribute to it by producing and up-loading  their  own  content.  The  so-called  Web  2.0 evolved and brought some major changes  also in  web development.  The  new  way  of  interaction  with  Web calls also  for the  evolution of  web languages with  the main intention  to formalize some of the  already estab-lished good practices in web development.     In this paper we summarize  some important novel-ties  in new  web standards and  protocols. We  concen-trate primarily on the new version of HTML by present-ing its new elements and extensions. We list also some most important JavaScript APIs which enable an entire-ly new way of web development by providing a brows-er-based  database,  information  on  geolocation,  full-duplex communication between a browser and a server and other new exciting features. We point out also some new  options in  the  CSS syntax.  The latter  introduces many new design options and also simplifies and stan-dardizes some  features that have been available  before but suffered from poor browser support.  2  HTML5 HTML is in the continuous development since its intro-duction in the early 1990s. The majority of its features and functionalities have been defined through specifica-tions, but  some of them are  also result of  good devel-opment practices and the implementations of HTML in the popular browsers.    The actual HTML  version - HTML4 - has  been in use  for  almost  a  decade.  According  to  W3C  (World Wide Web Consortium) [1] one of the big disadvantages of HTML4 is that “it does not provide enough informa-tion  to  build  implementations  that  interoperate  with each other and,  more importantly,  with a critical mass of deployed content. The same goes for XHTML1, which defines  an  XML  serialization  for  HTML4,  and  DOM Level 2 HTML, which defines JavaScript APIs for both HTML and XHTML...”.
+        </p>
+        
+        <p id="para3">
+            <span>2.1  Changes in the Language</span>
+            The majority of web  pages today uses  common struc-tures such as headers, footers and sidebars to denote the semantic structure of the page. Because HTML versions in  use  today  do  not  provide  special  markup  for  this purpose,  web  developers  use  div  and  span  elements, assigning them  a unique id and/or arranging  them into classes.  HTML5  introduces  a  set  of  new  elements, which allow semantic marking of the  document struc-ture. They  represent more specific replacement for  the general div and span elements. </p>
+    
+        
+        <p>
+            <span>2.2  Web Forms</span>
+            Web forms enable interaction between a web client and a web server. The data in the forms entered by the user is  sent  to  a  server,  which  responds  according  to  the received values (e.g. returns the result of a search). The choice of the widgets used in forms is, however, limited. One of the good web development practices is the vali-dation  of  more  complex  data  on  the client  side.  The latter is preformed using JavaScript or any other client side scripting languages. To provide new form widgets and  to avoid  validation of  data on  both sides,  several custom form  widgets were developed  that can be used through third-party JavaScript libraries.   The developer  needs have encouraged  the develop-ment  of a  new  generation of  Web  forms, called  Web Forms 2.0, which found their way into HTML5 specifi-cations. New widgets  are introduced as  new values  of the attribute type of the input element (tel, search, url, email, datetime, date,  month, week,  time, datetime-local,  number,  range,  color).  Besides  new  widgets, HTML5 also introduces the enhancements of the exist-ing ones as  well as  the automatic validation of the en-tered data. </p>
+    
+        <p>
+            <span>2.3  Semantics</span>
+            The  HTML  tags  are  intended  for  describing  how  to display  the information  and  not what  this information means. An  important trend on the  Web is the introdu-ction of  semantics into the resources. Besides defining the document structure in HTML5 the semantic markup is used also for recording  microdata and assistive tech-nologies for disabled users.</p>
+   
+        <p>
+            <span>2.4  Microdata</span>
+            The mechanism of microdata  [8] enables  the informa-tion  in  HTML  documents,  primarily  intended  for  the end  users  (contact  information,  location  information etc.), to be machine-readable and can therefore be used for  automatic  processing (e.g.  for indexing,  searching, storing, cross-referencing, analyzing etc.).The model  of microdata  is comprised of groups  of properties named  items. The items  and their properties are presented in the context of the existing elements. An item can be created using the itemscope attribute in any element. Each item has its own type (itemtype), a global identifier  (itemid) and  a set  of  name-value pairs.  The itemprop attribute can be used in any of the item’s des-cendants to  express a property, while the value of this attribute denotes the value of the property.
+        </p>
+        <p>
+            <span>2.5  Accessibility </span>
+            A  significant  portion of  the  Web content  is currently inaccessible to users with disabilities, especially to those that depend on assistive tools, for example screen read-ers and Braille keyboards. The major problem for such tools is reading and interpreting the content which uses advanced, frequently updated user interfaces developed with the combination of the technologies AJAX (Asyn-chronous JavaScript and XML), HTML and JavaScript.
+        </p>
+        </div>
+        <br>
+        <hr><hr>
+        <br>
+        <div class="para para1">
+            <p id="Spara1">
+                <span>3  Presentation and Cascade Style Sheets (CSS)</span>
+                The  markup  languages  are  used  primarily  to  define basic  structure  of web  documents and  pages while on the other  hand the final presentation and  rendering are usually defined with CSS – a style sheet language which defines  presentation  semantics.  The  technique  of  de-signing web pages with CSS is almost 14 years old with the CSS  2.1 being the  leading standard  for the  last 12 years.  It  is  widely supported  by  the  majority  of  web browsers  and  it evolved  rapidly  over  the  last decade. Along with the new markup languages the new CSS are being proposed as well. CSS3 is the new potential stan-dard currently in the state of working draft or candidate recommendation.  The  massive  specification  of  CSS3 standard [11] is divided into several modules which are developed  individually  with  different  progress  speeds and dynamics. Various modules enable browser vendors to  implement  them  incrementally.  Several  CSS3  mo-dules are already supported  by the  majority of modern browsers.  The  new  standard  is completely  backwards compatible  with  the  addition  of  new  properties  and functionalities.
+        </p>
+            
+            <p id="Spara2">
+                <span>4  APIs</span>
+                HTML5 introduces a number  of APIs  that standardize features already present in today's browsers. Support for these features can be tracked on sites like [7] or [12].  
+            </p>
+            
+            <p id="Spara3">
+                <span>4.1  Offline features</span>
+                The  Web  has  evolved  from  a  Web  of  simple  hyper-linked  documents  to  a  mashup  of  web  applications. These applications are becoming more and more similar to  desktop  applications  and  therefore  require  similar facilities.   The  first  step  in  using  local  storage  is  to  detect whether the user agent has a connection to the internet. W3C's Offline Web Applications [13] proposes usage of two  events  (“online”  and  “offline”)  dispatched  to  the Window object  and an IDL (Interface  Definition Lan-guage) attribute called “onLine” on the Navigator  ob-ject. This allows an application to either actively decide whether to work with remote resources or be notified by the browser when state changes.    In  recent past,  using cookies  was the only  way to store data locally  [14]. Although being some sort  of a hack to the stateless nature of HTTP, cookies have been used widely to store small amounts of data on the client. Cookies  have  two  downsides:  limited  storage  (in  the range of 4kB) and the fact that they are sent to the serv-er for every request.
+            
+            <p id="Spara4">
+                <span>4.2  Geolocation</span>
+                HTML has become an increasingly popular technology on  mobile  devices  and  an  answer  to  cross  platform problems on  mobile devices. As  mobile operating sys-tem  market  is  fragmenting  (iOS,  Android,  Mae-mo/MeeGo, Symbian etc.), the HTML technology eco-system is the only real counterweight to native applica-tions.   Geolocation is one of the “killer technologies” in the mobile  world.  It sprung  an ecosystem  of  applications and  it  also  improves  capabilities  of  existing  applica-tions. While geolocation has been available for different mobile platforms for quite a while, it is only now being standardized by W3C. When determining the location of a device, software does not rely on a single, but a range of  technologies  including  GPS  (Global  Positioning System), Wi-Fi, RFID (Radio Frequency Identification) and mobile radio technologies.
+            <p>
+                <span>4.3  Web Workers</span>
+                While JavaScript within browser supports asynchronous communication with servers, the user interface is always drawn and interacted with in a single thread. This means that while computationally intensive tasks can  be done on the server  without slowing down the user interface, there is no way to do them within a browser. 
+            <p>
+                <span>4.4  Two-way communication between a web  browser and a server-side process</span>
+                In  the original  model  of the  web,  browser always re-quests a  web page  or parts  of a  web page.  HTTP 1.1 specifications limit browsers to maximum of two simul-taneous  connections with  a web  server  which enables faster  loading  and  rendering  of  pages  with  multiple pictures or  multimedia content. In  the past, a “Comet” model has changed this classical model by keeping the one of the  two connections alive permanently for  real-time data  exchange with  the server. A web  server can use this connection to  push data to  a browser  without the  browser  to explicitly  requesting  it.  In  some cases just one long lasting connection can be used instead of two simultaneous connections. There have been several different  implementations  of  this  technique but  all  of them rely on AJAX and its XMLHttpRequest object.
+            </p>
+            <p>
+                <span>5 Conclusion</span>
+                The general idea of HTML5 and other tools presented in this paper is the formal specification and the establish-ment of uniform solutions for technologies and functio-nalities which have already been in use through various hacks  and  plug-ins proposed  by  web  developers.  The majority  of  modern  rich  and  interactive  web  designs was based on Adobe Flash technology which was sup-ported by all major browser vendors. The Flash plug-in offered  an  excellent  support  for  multimedia  content, especially animations and animated interfaces. HTML5 simplifies  the  implementation  of  such  functionality through native browser support.
+            </p>
+            </div>
+            <br><br>
+            <hr><hr>
+            <div class="name">
+                <h4 style="font-weight: 600; margin: 10px; float: right;">By Aditya Nikhate</h4>
+                <h4 style="visibility: hidden;">space</h4>
+            </div>
+</body>
+</html>
