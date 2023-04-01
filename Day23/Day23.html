@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day23</title>
+    <style>
+        .conatainer{
+            background-color: antiquewhite;
+            height: 500px;
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* flex-wrap:wrap-reverse; */
+            /* justify-content:space-around; */
+            row-gap: 10px;
+        }
+
+        .box{
+            background-color: brown;
+            margin: 5px;
+            width: 1000px;
+            height: 400px;
+        }
+
+        #box-1{            
+            order: 3;
+        }
+
+        #box-2{            
+            order: 1;
+        }
+
+        #box-3{            
+            order: 2;
+        }
+
+       
+        img{
+            width: 732px;
+    height: 399px;
+}
+        
+    </style>
+</head>
+<body>
+    <!-- .conatainer>.box#box-${box-$}*8 -->
+    <div class="conatainer">
+        <div class="box" id="box-1">box-1
+            <img src="https://thumbs.dreamstime.com/z/small-child-choosing-toys-kid-s-store-shopping-children-small-child-choosing-toys-kid-s-store-shopping-147293809.jpg">
+        </div>
+        <div class="box" id="box-2">box-2
+            <img src="https://images.meesho.com/images/products/128668571/o00bi_512.jpg">
+        </div>
+        <div class="box" id="box-3">box-3
+            <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/810mtRA5qhL._UL1500_.jpg">
+        </div>
+       
+    </div>
+</body>
+</html>
