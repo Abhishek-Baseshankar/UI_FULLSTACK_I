@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+        .conatainer{
+            width:800px;
+            height: 900px;
+            background-color: antiquewhite;
+            border: 2px solid red;
+            display: grid;
+            column-gap: 20px;
+            row-gap: 10px;
+            /* grid-template-columns: 200px 200px; */
+            /* grid-template-rows: 300px 300px 300px 300px; */
+            grid-template-areas: "hdr hdr hdr"
+                                 "subM mainM mainM"
+                                 "ftr ftr ftr";
+        }
+
+        .box{
+            border: 2px solid green;
+        }
+        #box-1{
+            grid-area: hdr;
+        }
+
+        #box-2{
+            grid-area: subM;
+        }
+
+        #box-3{
+            grid-area: mainM;
+        }
+
+        #box-4{
+            grid-area: ftr;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="conatainer">
+        <div class="box" id="box-1">hdr</div>
+        <div class="box" id="box-2">subM</div>
+        <div class="box" id="box-3">mainM</div>
+        <div class="box" id="box-4">ftr</div>
+        
+    </div>
+</body>
+</html>
