@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>JSON|Application_03</title>
+    <style>
+        .thead-,th{
+            background-color: #Ff0000;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="table">
+        <thead class="thead-dark"></thead>
+       
+            <tr>
+                <th>Colour Name</th>
+                <th>Color</th>                
+             </tr>
+            </thead>    
+             <tbody id="tbody">
+               
+            </tbody>   
+    
+</body>
+<script>
+    const jsonReader = new XMLHttpRequest()
+    const url = "https://api.cricapi.com/v1/cricScore?apikey=ed624822-f138-4643-880b-9b0ee2664934";
+   
+    const jsondata =  {"apikey": "ed624822-f138-4643-880b-9b0ee2664934"}
+
+    const data = JSON.stringify(jsondata);
+
+    jsonReader.open("POST", url, true);
+    jsonReader.setRequestHeader("Content-Type", "application/json");
+    jsonReader.responseType = 'json';
+
+    jsonReader.onload = function(){
+        if(jsonReader.status===200){
+            console.log(jsonReader.response)
+            // a92711fa-55d1-42a1-8cd7-571a0f9fb614   :id    t1,t2,t2s-->score    data -[]
+            processData(jsonReader.response)
+        }
+    }
+    jsonReader.send();
+
+    function processData(resp){
+        var respdata = resp['data']
+
+       
+
+        for(teamData in respdata){
+            
+            let flag =false
+            for(key in respdata[teamData]){
+                if(respdata[teamData][key]=="a92711fa-55d1-42a1-8cd7-571a0f9fb614"){
+                    flag=true
+                    console.log("found key....")
+                }
+
+                if(flag){
+                    console.log("Team 1 Name ==> "+respdata[teamData]["t1"])
+                    console.log("Team 2 Name ==> "+respdata[teamData]["t2"])
+                    console.log("Score ==> "+respdata[teamData]["t2s"])
+                }
+            }
+        }
+
+    }
+
+   
+</script>
+</html>
