@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>cricket|Board</title>
+    <style>
+        #data{
+            width: 400px;
+            height: 150px;
+            background-color: bisque;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+
+    <button type="button" class="btn btn-success" style="margin: 20px;" onclick="getScore()">
+        <span id="myspinner" class="spinner-border-sm" role="status" aria-hidden="true"></span>
+        Refresh Score</button>
+
+    <hr style="border: 2px solid red;">
+
+    <a href="images.png" target="abhishekScreen">
+        <button type="button" class="btn btn-success">My Image</button>
+      </a>
+     
+      //CHANGE THIS LINE BY ADDING YOUR OWN JIO CENEMA LINK AFTER LOGIN AND THEN UNCOMMENT IT BEFORE RUNNING APPLICATION (See in recording)
+      <!-- <a href="https://www.jiocinema.com/sports/rr-vs-dc/????" target="abhishekScreen"> -->
+        <button type="button" class="btn btn-success">Cricket</button>
+      </a>
+
+    <h4>My Cricket Score Board</h4>
+    <div id="data">
+        <h6>Score</h6>
+        <div id="score"></div>
+    </div>
+
+    
+      <hr style="border: 2px solid red;">
+
+      <h2>Welcome to my Channel</h2>
+      <iframe width="560" height="315" name="abhishekScreen"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+</body>
+<script>
+
+    function getScore(){
+        document.getElementById("myspinner").classList.add("spinner-border");
+        const webApi = new XMLHttpRequest()
+        const url = "http://127.0.0.1:7000/score"
+        webApi.open("GET",url,true)
+        webApi.responseType = 'json'
+
+        webApi.onload = function(){
+            if(webApi.status ===200){
+                document.getElementById("myspinner").classList.remove("spinner-border");
+                console.log(webApi.response)
+                showScore(webApi.response)
+            }
+        }
+        webApi.send()
+
+    }
+
+    function showScore(score){
+
+        console.log(score['live Score'])
+
+        document.getElementById("score").innerHTML = "<b style='color:red'>"+score['live Score']+"</b>"
+
+
+
+    }
+    
+</script>
+</html>
