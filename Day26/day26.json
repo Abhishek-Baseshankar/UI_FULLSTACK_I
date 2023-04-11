@@ -1,0 +1,32 @@
+[
+    {
+    "name":"Abhishek",
+    "address":"Hyderabad",
+    "lastCompany":"Nexgensis,Pune",
+    "mobileNumber":"985656562"
+},
+{
+    "name":"Aditya",
+    "address":"Chandrapur",
+    "lastCompany":"TCS,Pune",
+    "mobileNumber":"888554525"
+},
+{
+    "name":"Mayur",
+    "address":"Nagpur",
+    "lastCompany":"Persistance Systems",
+    "mobileNumber":"7895156566"
+},
+{
+    "name":"Shreya",
+    "address":"Pune",
+    "lastCompany":"Zensar,Pune",
+    "mobileNumber":"7777522232"
+},
+{
+    "name":"Pranjali",
+    "address":"Hyderabad",
+    "lastCompany":"Wipro,Pune",
+    "mobileNumber":"789584545"
+}
+]

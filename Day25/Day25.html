@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript|Objets</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    var myObject = {
+        "name":"Abhishek",
+        "address":"Hyderabad",
+        "phoneNumber":"8888666576",
+        "myData":{
+            "technology":"J2EE",
+            "Framework":"springBoot",
+            "Database":"Mysql"
+        },
+        "hobbies":["cricket","singing","reading"],
+        "myFunction":function(){
+            console.log(this.age)
+        }
+    }
+
+    myObject['age'] ="24" 
+
+    for(let key in myObject ){
+    //    if(typeof(myObject[key]) ==="object"){
+    //      for(let skey in myObject[key]){
+    //         console.log(myObject[key][skey])
+    //      }
+    //    }else if(typeof(myObject[key]) ==="function"){
+    //         myObject[key]()
+    //    }else{
+    //     console.log(myObject[key])
+    //    }
+
+    if(typeof(myObject[key]) ==="function"){
+            myObject[key]()
+    }
+}
+</script>
+</html>

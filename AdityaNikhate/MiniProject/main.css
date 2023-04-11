@@ -33,7 +33,7 @@ body{
     padding-right: 50px;
 }
 .box-s{
-    /* background-color: black; */
+     background-color: black; 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -49,10 +49,10 @@ body{
     padding-right: 10px;
     padding-top: 10px;
     border-radius: 50px;
-    /* background-color: #fff; */
+     background-color: #fff; 
 }
 h5{
-    /* color: white; */
+    color: white; 
     text-align: center;
 }
 .imgbox{
