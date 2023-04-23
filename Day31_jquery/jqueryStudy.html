@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   <style>
+        .blueclass{
+            color: blue;
+        }
+
+        .greenclass{
+            color: greenyellow;
+        }
+   </style>
+    <title>JQUERY</title>
+</head>
+<body>
+
+  
+    
+    Students Name : <input id="name" type="text"><br><br>
+    Students Number: <input id="num" type="number">
+    <div style="background-color: red; width:100px;height: 100px;border-radius: 5%;" onclick="showData()"></div>
+    
+    <h1 class="blueclass">This is demo for add and remove class</h1>
+
+
+</body>
+<script>
+    // var array = document.getElementsByTagName('h1')
+    // console.log(array)
+    // console.log(array.length)
+    // array[0].style.color='red'
+    // $('#myDiv').css({
+    //         background: 'red',
+    //         width: '70px',
+    //         height: '100px'
+
+    // }
+    //     )
+
+    function showData(){
+        var name = $('#name').val()
+        var num = $('#num').val()
+        
+        $('h1').removeClass('blueclass')
+
+        $('h1').addClass('greenclass')
+        console.log("Hi My Name is "+name+" and My Number is "+num)
+
+        $('#name').val('')
+        $('#num').val('') 
+
+    }
+
+</script>
+</html>
+
