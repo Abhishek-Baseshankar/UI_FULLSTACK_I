@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!-- <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />   -->
+	<link rel="stylesheet" href="style2.css">
+	
+</head>
+<body>
+	<div class="container" id="container">
+		<!-- <div class="boxex">
+			<div class="imgbox">
+				<img src="Images/img3.jpg" alt="">
+			</div>
+			<h4>456</h4>
+			<h2>45</h2>
+			
+		</div> -->
+		<!-- <div class="boxex"></div>
+		<div class="boxex"></div>
+		<div class="boxex"></div>
+		<div class="boxex"></div>
+		<div class="boxex"></div>
+		<div class="boxex"></div>
+		<div class="boxex"></div> -->
+	</div>
+	<script>
+		const jsonReader = new XMLHttpRequest()
+    jsonReader.open('GET','AllProductsInfo.json',true)
+    jsonReader.responseType = 'json';
+    jsonReader.onload = function(){
+        if(jsonReader.status===200){
+            console.log(jsonReader.response)
+			// console.log("HI")
+            processData(jsonReader.response)
+        }
+    }
+    jsonReader.send();
+	var tableFill = document.getElementById("container")
+    var out=''
+    function processData(jsonData){
+        for(let data in jsonData){
+            out+="<div class='boxex'>"
+            for(let value in jsonData[data]){
+				// console.log("4444 "+ value)
+				if(value=="path"){
+					out+="<div class='imgbox'><img src='"+jsonData[data][value]+"' alt=''></div>"
+				}
+				if(value=="porductname"){
+					out+="<h2>"+jsonData[data][value]+"</h2>"
+				}
+				if(value=="price"){
+					out+="<h2>"+jsonData[data][value]+"</h2>"
+				}
+            }
+			out+="<span class = 'checked'>&#x2605;</span> <span class = 'checked'>&#x2605;</span>  <span class = 'checked'>&#x2605;</span>  <span class = 'checked'>&#x2605;</span> <span class = 'unchecked'>&#x2605;</span> "
+
+			out+="</div>"
+            // out+="<td><button style='color:green' onclick='edit(this)'><i class='fa fa-pencil' aria-hidden='true'></i></button>&nbsp&nbsp<button style='color:red' onclick='deleteData(this)'><i class='fa fa-trash' aria-hidden='true'></i></button></td></tr>"
+        }
+        // console.log(out)
+        tableFill.innerHTML = out
+    }
+	</script>
+</body>
+</html>
