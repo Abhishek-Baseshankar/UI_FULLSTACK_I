@@ -1,0 +1,44 @@
+#LogoImage{
+    width: 100%;
+    height: 100%;
+}
+#navbarSupportedContent1{
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+}
+#midnav{
+    margin-left: 20px;
+}
+
+#midnav li{
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: medium;
+}
+.col-lg-4{
+    margin-top: 20px;
+}
+.outeradds{
+    padding-top: 20px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+}
+#myCarousel{
+    width: 80%;
+    height: 400px;
+
+}
+.carousel-inner{
+    width: 100%;
+    height: 100%;
+}
+.item{
+    width: 100%;
+    height: 100%;
+}
+#img1{
+    width: 100%;
+    height: 100%;
+}

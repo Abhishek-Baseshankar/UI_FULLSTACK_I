@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/login.css')}}">
+</head>
+<body>
+    <div class="holescreen">
+    <div class="container">
+        <h2>Login With</h2>
+        <div id="auth">
+        <img src="{{url_for('static',filename='images/google.png')}}" alt="">
+        <img src="{{url_for('static',filename='images/facebook.png')}}" alt="">
+        <img src="{{url_for('static',filename='images/twitter.png')}}" alt="">
+        </div>
+        <h2>OR</h2>
+        <div id="line"></div>
+        <input type="text" id="email" placeholder="Enter Email"><br><br>
+        <input type="password" id="password" placeholder="Enter Password"><br><br>
+        <input type="button" value="Login" onclick="submitData()" id="submit"><br><br>
+        <small id="small1">Forget Password</small>
+        <a id="small2out" href="/signup"><small id="small3">Create a new Account?</small></a>
+    </div>
+    </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/scriptLogin.js') }}"></script>
+</body>
+</html>
