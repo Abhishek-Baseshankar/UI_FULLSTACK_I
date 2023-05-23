@@ -1,0 +1,45 @@
+#firstdiv{
+   
+   height: 100px;
+  width: 80px;
+  margin-left: 50%;
+ padding-bottom: 9px;
+   background-color: blanchedalmond;
+}
+#seconddiv{
+   
+   height: 100px;
+   width: 70px;
+   margin-left: 20%;
+   margin-top: 15%;
+
+
+   background-color: rgb(228, 224, 212);
+}
+
+
+#thirddiv{
+   
+   height: 70px;
+   width: 70px;
+   margin-left: 80%;
+   margin-top: 1px;
+  
+    background-color: rgb(241, 241, 235);
+}
+
+
+#fourthdiv{
+    
+    height: 90px;
+    width: 70px;
+    margin-left: 50%;
+    margin-top: 5px;
+    
+    background-color: rgb(215, 215, 213);
+}
+#parents{
+   height: 0%100;
+   width: 100%;
+   background-color: rgb(80, 152, 196);
+}
