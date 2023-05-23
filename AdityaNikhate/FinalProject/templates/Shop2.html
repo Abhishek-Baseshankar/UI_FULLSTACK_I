@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Images</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/mainpage.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/Shop2.css')}}">
+
+</head>
+<body >
+
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Toggle button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+      
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Navbar brand -->
+            <a class="navbar-brand mt-2 mt-lg-0" href="AddProduct.html" id="navbarSupportedContent1">
+              <img
+                src="{{url_for('static',filename='images/Logo.jpg')}}"
+                height="15"
+                alt="MDB Logo"
+                loading="lazy"
+                id="LogoImage"
+              />
+            </a>
+            <!-- Left links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="midnav">
+              <li class="nav-item">
+                <a class="nav-link" href="/loadmainPage">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tops</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Dresses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Trousers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/shop2">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/sellform2">Sale</a>
+              </li>
+            </ul>
+            <!-- Left links -->
+          </div>
+          <!-- Collapsible wrapper -->
+      
+          <!-- Right elements -->
+          <div class="d-flex align-items-center">
+            <!-- Icon -->
+            <a class="link-secondary me-3" href="#" style="padding-right: 30px;">
+              <!-- <i class="fas fa-shopping-cart"></i> -->
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+            </a>
+      
+            <!-- Notifications -->
+            <div class="dropdown" style="padding-right: 20px;">
+              <a
+                class="link-secondary me-3 dropdown-toggle hidden-arrow"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fas fa-bell"></i>
+                <span class="badge rounded-pill badge-notification bg-danger">1</span>
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">Some news</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Another news</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Avatar -->
+            <div class="dropdown">
+              <a
+                class="dropdown-toggle d-flex align-items-center hidden-arrow"
+                href="#"
+                id="navbarDropdownMenuAvatar"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="{{url_for('static',filename='images/users.png')}}"
+                  class="rounded-circle"
+                  height="25"
+                  alt="Black and White Portrait of a Man"
+                  loading="lazy"
+                />
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="navbarDropdownMenuAvatar"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">My profile</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Settings</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Logout</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Right elements -->
+        </div>
+        <!-- Container wrapper -->
+      </nav>
+      <!-- Navbar -->
+
+
+    <div class="container12" id="container12"></div>
+
+    <script>
+        // Retrieve the images data from Flask in JSON format
+        var imagesData = JSON.parse('{{ images|safe }}');
+        var tableFill = document.getElementById("container12")
+        var out=''
+        console.log(imagesData.length)
+        // Loop through the imagesData and create HTML divs to display images
+        // out+="<div class='boxex'>"
+        for (var i = 0; i < imagesData.length; i++) {
+            
+            console.log(ImageData[i]);
+            var image = imagesData[i];
+            // var div = document.getElementById('container');
+            // var title = document.createElement('p');
+            // var price = document.createElement('p');
+            // var img = document.createElement('img');
+
+            // title.textContent = image.name;
+            // price.textContent = image.price;
+            var src1 = 'data:image/jpeg;base64,' + image.image;
+
+            // div.appendChild(title);
+            // div.appendChild(price);
+            // div.appendChild(img);
+            out+="<div class='boxex'>"
+            out+="<div class='imgbox'><img src='"+src1+"' alt=''></div>"
+            out+="<h2>"+image.name+"</h2>"
+            out+="<h2>"+image.price+"</h2>"
+            out+="<span class = 'checked'>&#x2605;</span> <span class = 'checked'>&#x2605;</span>  <span class = 'checked'>&#x2605;</span>  <span class = 'checked'>&#x2605;</span> <span class = 'unchecked'>&#x2605;</span> "
+            out+="</div>"
+            
+        }
+        tableFill.innerHTML = out
+    </script>
+    <!-- <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script> -->
+</body>
+</html>
